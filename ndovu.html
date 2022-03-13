@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ndovu Canvas Ltd</title>
+        <link rel= "stylesheet" href= "style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="Images/logo3.png" alt=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">SERVICES</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">CONTACTS</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+
+            </nav>
+            <div class="text-box">
+                <h1>The Company</h1>
+                <p>Your favorite Transport and Camping Partner</p>
+                <a href="" class="hero-btn">Visit Us</a>
+
+            </div>
+        </section>
+        <!---------------------Services----------------------------------------->
+        <section class="services">
+            <h1>Check out the Services we Offer</h1>
+        </section>
+
+
+<!----------------------Java script for toogle Menu----------------------------------->
+
+        <script>
+            var navLinks= document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = '0'
+            }
+            function hideMenu(){
+                navLinks.style.right = '-220px'
+            }
+        </script>
+    </body>
+</html>
